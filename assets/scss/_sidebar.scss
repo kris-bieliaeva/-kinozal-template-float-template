@@ -4,3 +4,23 @@
 .left-sidebar {
   margin-bottom: $gap-xl;
 }
+
+.vertical-slider {
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  &__image {
+    width: 100%;
+  }
+}
+
+.user-login {
+  position: relative;
+
+  $__tabs {
+    position: absolute;
+    top: 0;
+    right: $gap;
+  }
+}
