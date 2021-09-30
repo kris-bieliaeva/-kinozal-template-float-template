@@ -36,7 +36,6 @@
       margin: 5px 5px 5px 0;
     }
   }
-
   @include sm {
     margin-bottom: 0;
   }
@@ -48,7 +47,6 @@
       margin: 5px 0 5px 5px;
     }
   }
-
   @include sm {
     margin-top: 0;
   }
@@ -60,5 +58,34 @@
 
 .navbar-toggle {
   float: none;
+
   margin-right: 0;
+}
+
+.panel-info {
+  border: none;
+  background-color: $color-gray-light;
+
+  &:not(:last-of-type) {
+    margin-bottom: $gap * 2;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .panel-heading {
+    letter-spacing: 0.08em;
+
+    color: $color-white;
+    border: none;
+    background-color: $color-accent;
+
+    font-size: 1.25rem;
+  }
+
+  .panel-body {
+    border: 1px solid $color-gray;
+    border-radius: 0 0 4px 4px;
+  }
 }

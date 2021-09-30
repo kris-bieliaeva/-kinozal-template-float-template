@@ -2,26 +2,32 @@
 @use "mixins/" as *;
 
 .header {
+  margin-bottom: $gap-xl;
 }
 .header-logo {
-  text-align: center;
   padding: 100px 0;
+
+  text-align: center;
+
   background-image: url(../img/header-bg.jpg);
   background-position: center;
   background-size: cover;
 
   &__title {
     display: block;
-    font-family: $font-header;
-    color: $color-accent;
-    letter-spacing: 0.33em;
-    margin-right: -0.33em;
-    @extend %text-shadow;
 
+    margin-right: -0.33em;
+
+    letter-spacing: 0.33em;
+
+    color: $color-accent;
+
+    font-family: $font-header;
+
+    @extend %text-shadow;
     @include xs-min {
       font-size: 3.5rem;
     }
-
     @include xs {
       font-size: 2.5rem;
     }
@@ -29,13 +35,15 @@
 
   &__description {
     display: block;
-    font-size: 1.15rem;
+
     letter-spacing: 0.2em;
-    @extend %text-shadow;
+
     color: $color-white;
+
+    font-size: 1.15rem;
+
+    @extend %text-shadow;
   }
 }
-.container {
-}
-.header-menu {
-}
+
+
