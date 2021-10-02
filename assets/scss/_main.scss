@@ -68,9 +68,7 @@
   }
 
   &__image {
-  }
-
-  &__caption {
+    width: 100%;
   }
 
   &__title {
@@ -125,12 +123,6 @@
 
   h3 > a {
     transition: color 0.5s;
-  }
-
-  &__thumbnail {
-  }
-
-  &__image {
   }
 
   &__text {

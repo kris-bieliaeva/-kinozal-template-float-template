@@ -1,2 +1,40 @@
 @use "presets/" as *;
 @use "mixins/" as *;
+
+.footer {
+  padding-top: $gap-triple;
+  color: $color-gray;
+  background-color: $color-dark;
+
+  &-list {
+  }
+}
+
+.footer-list-item {
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    color: #6f6f6f;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.footer-author {
+  margin: 20px 0;
+  text-align: center;
+
+  a {
+    color: #d5d5d5;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

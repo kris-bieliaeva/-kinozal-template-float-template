@@ -182,6 +182,10 @@ section {
 .top-week-films-item__thumbnail:hover h3 {
   color: #ffffff !important;
 }
+.new-films-item__image,
+.top-week-films-item__image {
+  width: 100%;
+}
 .new-films-item__title,
 .top-week-films-item__title {
   display: block;
@@ -364,6 +368,34 @@ section {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  padding-top: 45px;
+  color: #d5d5d5;
+  background-color: #232323;
+}
+.footer-list-item ul {
+  padding: 0;
+  list-style: none;
+}
+.footer-list-item a {
+  color: #6f6f6f;
+}
+.footer-list-item a:hover {
+  color: #ffffff;
+}
+
+.footer-author {
+  margin: 20px 0;
+  text-align: center;
+}
+.footer-author a {
+  color: #d5d5d5;
+  font-weight: 600;
+}
+.footer-author a:hover {
+  color: #ffffff;
 }
 @media (min-width: 576px) {
   h2 {
