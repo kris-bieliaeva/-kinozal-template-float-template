@@ -81,3 +81,65 @@
     text-align: center;
   }
 }
+
+.news-in-films {
+  h2 {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      margin: 0.25em 0 0 0;
+      border-bottom: 3px solid #f0ad4f;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      margin: 0.85em 0 0 15px;
+      border-bottom: 3px solid #f0ad4f;
+    }
+  }
+}
+
+.news-in-films-item {
+  &:first-of-type {
+    margin-top: 45px;
+  }
+
+  &:hover {
+    a {
+      color: $color-accent;
+    }
+
+    .thumbnail {
+      border-color: $color-accent;
+      background-color: $color-accent;
+    }
+
+    .btn {
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
+
+  h3 > a {
+    transition: color 0.5s;
+  }
+
+  &__thumbnail {
+  }
+
+  &__image {
+  }
+
+  &__text {
+    text-align: justify;
+  }
+
+  &__btn {
+    float: right;
+    transition: background-color 0.5s;
+    margin-bottom: 30px;
+  }
+}

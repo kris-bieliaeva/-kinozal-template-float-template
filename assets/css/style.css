@@ -195,6 +195,52 @@ section {
   text-align: center;
 }
 
+.news-in-films h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  border-bottom: 3px solid #f0ad4f;
+}
+.news-in-films h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f0ad4f;
+}
+
+.news-in-films-item:first-of-type {
+  margin-top: 45px;
+}
+.news-in-films-item:hover a {
+  color: #df8a13;
+}
+.news-in-films-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.news-in-films-item:hover .btn {
+  background-color: #df8a13;
+  color: #ffffff;
+}
+.news-in-films-item h3 > a {
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.news-in-films-item__text {
+  text-align: justify;
+}
+.news-in-films-item__btn {
+  float: right;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  margin-bottom: 30px;
+}
+
 .left-sidebar {
   margin-bottom: 80px;
 }
