@@ -5,10 +5,36 @@
   margin-bottom: $gap-xl;
 }
 
-.new-films {
-  margin-bottom: $gap-xl;
+.new-films,
+.top-week-films {
+  margin-bottom: 13px;
 
   &-title {
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 3px solid #f0ad4f;
+      width: 100%;
+      margin: 0.85em 0 0 $gap;
+    }
+  }
+
+  h2 {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      margin: 0.25em 0 0 0;
+      border-bottom: 3px solid #f0ad4f;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      margin: 0.85em 0 0 15px;
+      border-bottom: 3px solid #f0ad4f;
+    }
   }
 
   &-row {
@@ -18,13 +44,27 @@
   }
 }
 
-.new-films-item {
+.top-week-films-item {
+  margin-top: $gap;
+}
+
+.new-films-item,
+.top-week-films-item {
   padding-right: $gap-sm;
   padding-left: $gap-sm;
   margin-bottom: $gap;
 
   &__thumbnail {
     margin-bottom: 0;
+
+    &:hover {
+      background-color: $color-accent;
+      border-color: $color-accent;
+
+      h3 {
+        color: $color-white !important;
+      }
+    }
   }
 
   &__image {
@@ -35,5 +75,9 @@
 
   &__title {
     @include text-shortener;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
   }
 }

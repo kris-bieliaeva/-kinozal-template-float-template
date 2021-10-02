@@ -85,6 +85,15 @@ h1 {
   margin: -9.99999999px 0 1em;
 }
 
+h2 {
+  font-family: "PT Serif", serif;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
 .header {
   margin-bottom: 80px;
 }
@@ -114,29 +123,76 @@ h1 {
   margin-bottom: 80px;
 }
 
-.new-films {
-  margin-bottom: 80px;
+.new-films,
+.top-week-films {
+  margin-bottom: 13px;
 }
-.new-films-row {
+.new-films-title::after,
+.top-week-films-title::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid #f0ad4f;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+}
+.new-films h2::before,
+.top-week-films h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  border-bottom: 3px solid #f0ad4f;
+}
+.new-films h2::after,
+.top-week-films h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  border-bottom: 3px solid #f0ad4f;
+}
+.new-films-row,
+.top-week-films-row {
   margin-right: -7.5px;
   margin-left: -7.5px;
   margin-bottom: -15px;
 }
 
-.new-films-item {
+.top-week-films-item {
+  margin-top: 15px;
+}
+
+.new-films-item,
+.top-week-films-item {
   padding-right: 7.5px;
   padding-left: 7.5px;
   margin-bottom: 15px;
 }
-.new-films-item__thumbnail {
+.new-films-item__thumbnail,
+.top-week-films-item__thumbnail {
   margin-bottom: 0;
 }
-.new-films-item__title {
+.new-films-item__thumbnail:hover,
+.top-week-films-item__thumbnail:hover {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+.new-films-item__thumbnail:hover h3,
+.top-week-films-item__thumbnail:hover h3 {
+  color: #ffffff !important;
+}
+.new-films-item__title,
+.top-week-films-item__title {
   display: block;
   overflow: hidden;
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
 
 .left-sidebar {
@@ -264,6 +320,10 @@ h1 {
           transform: translateY(-50%);
 }
 @media (min-width: 576px) {
+  h2 {
+    font-size: 2.5rem;
+    margin: 45px 0 30px 45px;
+  }
   .header-logo__title {
     font-size: 3.5rem;
   }
@@ -288,6 +348,13 @@ h1 {
   }
 }
 @media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+    margin: 60px 0 45px 45px;
+  }
   .header-logo__title {
     font-size: 2.5rem;
   }

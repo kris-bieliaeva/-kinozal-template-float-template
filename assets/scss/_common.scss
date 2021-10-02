@@ -25,4 +25,27 @@ h1 {
   font-family: $font-header;
   font-size: 3rem;
   margin: -$gap-md 0 1em;
+
+  @include xs {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-family: $font-header;
+
+  @include xs {
+    font-size: 1.75rem;
+    margin: $gap-quad 0 $gap-triple $gap-triple;
+  }
+
+  @include xs-min {
+    font-size: 2.5rem;
+    margin: $gap-triple 0 $gap-double $gap-triple;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }
