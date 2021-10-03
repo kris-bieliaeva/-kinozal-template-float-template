@@ -3,6 +3,7 @@
 
 .footer {
   padding-top: $gap-triple;
+
   color: $color-gray;
   background-color: $color-dark;
 }
@@ -10,6 +11,7 @@
 .footer-list-item {
   ul {
     padding: 0;
+
     list-style: none;
   }
 
@@ -24,10 +26,12 @@
 
 .footer-author {
   margin: 20px 0;
+
   text-align: center;
 
   a {
     color: #d5d5d5;
+
     font-weight: 600;
 
     &:hover {

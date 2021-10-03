@@ -3,6 +3,14 @@
 
 .main {
   margin-bottom: $gap-xl;
+
+  .site-search {
+    margin-bottom: 45px;
+  }
+
+  .user-login {
+    margin-bottom: 60px;
+  }
 }
 
 .new-films,
@@ -11,55 +19,68 @@
 
   &-title {
     &::after {
-      content: "";
       position: absolute;
-      border-bottom: 3px solid #f0ad4f;
+
       width: 100%;
       margin: 0.85em 0 0 $gap;
+
+      content: "";
+
+      border-bottom: 3px solid #f0ad4f;
     }
   }
 
   h2 {
     &::before {
-      content: "";
       position: absolute;
       left: 0;
-      width: 30px;
+
+      width: $gap-double;
       margin: 0.25em 0 0 0;
+
+      content: "";
+
       border-bottom: 3px solid #f0ad4f;
     }
     &::after {
-      content: "";
       position: absolute;
+
       width: 100%;
       margin: 0.85em 0 0 15px;
+
+      content: "";
+
       border-bottom: 3px solid #f0ad4f;
     }
   }
 
   &-row {
     margin-right: -$gap-sm;
-    margin-left: -$gap-sm;
     margin-bottom: -$gap;
+    margin-left: -$gap-sm;
   }
 }
 
-.top-week-films-item {
-  margin-top: $gap;
+.top-week-films {
+  @include xs-min {
+    h2 {
+      margin-bottom: $gap-triple;
+    }
+  }
 }
 
 .new-films-item,
 .top-week-films-item {
+  margin-bottom: $gap;
   padding-right: $gap-sm;
   padding-left: $gap-sm;
-  margin-bottom: $gap;
 
   &__thumbnail {
     margin-bottom: 0;
 
     &:hover {
-      background-color: $color-accent;
       border-color: $color-accent;
+      background-color: $color-accent;
 
       h3 {
         color: $color-white !important;
@@ -72,37 +93,54 @@
   }
 
   &__title {
-    @include text-shortener;
+    margin: 0;
+
+    text-align: center;
+
     font-size: 1rem;
     font-weight: bold;
-    margin: 0;
-    text-align: center;
+
+    @include text-shortener;
   }
 }
 
 .news-in-films {
   h2 {
     &::before {
-      content: "";
       position: absolute;
       left: 0;
-      width: 30px;
+
+      width: $gap-double;
       margin: 0.25em 0 0 0;
+
+      content: "";
+
       border-bottom: 3px solid #f0ad4f;
     }
     &::after {
-      content: "";
       position: absolute;
+
       width: 100%;
       margin: 0.85em 0 0 15px;
+
+      content: "";
+
       border-bottom: 3px solid #f0ad4f;
     }
   }
 }
 
 .news-in-films-item {
+  &__thumbnail {
+    margin-bottom: 0;
+  }
+
   &:first-of-type {
-    margin-top: 45px;
+    margin-top: $gap-triple;
+
+    @include xs {
+      margin-top: $gap-double;
+    }
   }
 
   &:hover {
@@ -116,8 +154,8 @@
     }
 
     .btn {
-      background-color: $color-accent;
       color: $color-white;
+      background-color: $color-accent;
     }
   }
 
@@ -131,7 +169,9 @@
 
   &__btn {
     float: right;
+
+    margin-bottom: $gap-double;
+
     transition: background-color 0.5s;
-    margin-bottom: 30px;
   }
 }

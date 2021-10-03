@@ -147,7 +147,7 @@
             <span class="video-film-well-description">Год:
               <span class="video-film-well-description__badge badge">2016</span>
             </span>
-            <span class="video-film-well-description">Рейтинг:
+            <span class="video-film-well-description video-film-well-description-rate">Рейтинг:
               <span class="video-film-well-description__badge badge">8.8</span>
             </span>
             <span class="video-film-well-description">Режиссер:
@@ -173,7 +173,7 @@
         <!-- Feedbacks Section -->
         <section class="feedbacks-film">
           <h2>Отзывы о фильме</h2>
-          <div class="panel panel-info">
+          <div class="feedbacks-film-one panel panel-info">
             <div class="panel-heading">
               <span class="glyphicon glyphicon-user"></span>
               Владимир
@@ -187,7 +187,7 @@
               в этом и есть фокус, ведь настоящие фокусники секретов не раскрывают.
             </div>
           </div>
-          <div class="panel panel-info">
+          <div class="feedbacks-film-two panel panel-info">
             <div class="panel-heading">
               <span class="glyphicon glyphicon-user"></span>
               Евгения
@@ -204,8 +204,8 @@
         <!-- Comment Section -->
         <section class="comment-film">
           <h2>Оставить комментарий</h2>
-          <form>
-            <div class="form-group">
+          <form class="comment-film-form">
+            <div class=" form-group">
               <label class="sr-only" for="comment-film-name">Ваше имя</label>
               <input type="text" class="form-control input-lg" id="comment-film-name" placeholder="Ваше имя">
             </div>
@@ -213,11 +213,11 @@
               <label class="sr-only" for="comment-film-email">Email address</label>
               <input type="email" class="form-control input-lg" id="comment-film-email" placeholder="Укажите Email">
             </div>
-            <!-- <div class="form-group">
-              <label class="sr-only" for="exampleInputEmail3">Напишите комментарий</label>
-              <textarea class="form-control input-lg" rows="10" spellcheck="false"
+            <div class="form-group">
+              <label class="sr-only" for="comment-film-comment">Напишите комментарий</label>
+              <textarea id="comment-film-comment" class="form-control  input-lg" rows="10" spellcheck="false"
                 placeholder="Напишите свой комментарий здесь..."></textarea>
-            </div> -->
+            </div>
             <div class="form-group">
               <button type="submit" class="comment-film-btn btn btn-lg btn-warning">Отправить</button>
             </div>

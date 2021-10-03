@@ -3,11 +3,14 @@
 
 .video-film {
   h1::after {
-    content: "";
     position: absolute;
-    border-bottom: 3px solid #f0ad4f;
+
     width: 100%;
     margin: 0.85em 0 0 $gap;
+
+    content: "";
+
+    border-bottom: 3px solid #f0ad4f;
   }
 }
 
@@ -18,44 +21,86 @@
 }
 
 .video-film-well {
-  font-size: 1.2em;
+  margin-bottom: 35px;
+
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  margin-bottom: 35px;
+
+  font-size: 1.2em;
 }
 
 .video-film-well-description {
+  &-rate {
+    margin-right: $gap;
+    margin-left: $gap;
+  }
+
   &__badge {
     font-size: 0.8em;
   }
 }
 
 .description-film,
-.feedbacks-film {
+.feedbacks-film,
+.comment-film {
   h2 {
     &::before {
-      content: "";
       position: absolute;
       left: 0;
+
       width: 30px;
       margin: 0.25em 0 0 0;
+
+      content: "";
+
       border-bottom: 3px solid #f0ad4f;
     }
     &::after {
-      content: "";
       position: absolute;
+
       width: 100%;
       margin: 0.85em 0 0 15px;
+
+      content: "";
+
       border-bottom: 3px solid #f0ad4f;
     }
   }
 }
 
+.feedbacks-film-one {
+  margin-top: $gap-triple;
+
+  @include xs {
+    margin-top: $gap-double;
+  }
+}
+
+.feedbacks-film-two {
+  margin-bottom: $gap !important;
+}
+
 .description-film-well {
-  margin-bottom: $gap;
-  margin-top: 35px;
+  margin-top: $gap-triple;
+  margin-bottom: 34px;
+
+  @include xs {
+    margin-top: $gap-double;
+  }
 
   p {
     margin-bottom: 0;
+  }
+}
+
+.comment-film-btn {
+  float: right;
+}
+
+.comment-film-form {
+  margin-top: $gap-triple;
+
+  @include xs {
+    margin-top: $gap-double;
   }
 }

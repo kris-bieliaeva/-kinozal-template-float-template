@@ -22,11 +22,14 @@ a {
 }
 
 h1 {
-  font-family: $font-header;
-  font-size: 3rem;
   margin: -$gap-md 0 1em;
 
+  font-family: $font-header;
+  font-size: 3rem;
+
   @include xs {
+    margin: 1px 0 1em;
+
     font-size: 2rem;
   }
 }
@@ -35,17 +38,25 @@ h2 {
   font-family: $font-header;
 
   @include xs {
-    font-size: 1.75rem;
-    margin: $gap-quad 0 $gap-triple $gap-triple;
-  }
+    margin: 30px 0 30px $gap-triple;
 
+    font-size: 1.75rem;
+  }
   @include xs-min {
-    font-size: 2.5rem;
     margin: $gap-triple 0 $gap-double $gap-triple;
+
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  @include xs {
+    font-size: 1.25rem;
   }
 }
 
 section {
   position: relative;
+
   overflow: hidden;
 }
