@@ -30,6 +30,8 @@
 }
 
 .video-film-well-description {
+  white-space: nowrap;
+
   &-rate {
     margin-right: $gap;
     margin-left: $gap;

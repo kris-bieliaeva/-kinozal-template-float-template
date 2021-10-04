@@ -275,6 +275,9 @@ section {
   font-size: 1.2em;
 }
 
+.video-film-well-description {
+  white-space: nowrap;
+}
 .video-film-well-description-rate {
   margin-right: 15px;
   margin-left: 15px;
